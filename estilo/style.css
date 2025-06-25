@@ -22,3 +22,31 @@ footer {
   background-color: #343a40;
   color: white;
 }
+
+/* Ocultar los paneles por defecto */
+.toggle-section {
+  display: none;
+  padding: 1rem;
+  background-color: #f8f9fa; /* un gris suave para que resalte */
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Mostrar cuando activo */
+.toggle-section.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
