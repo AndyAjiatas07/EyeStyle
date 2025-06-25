@@ -1,7 +1,7 @@
 /* Estilos personalizados */
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f') center/cover no-repeat;
+  background: url(../img/fondo.png) center/cover no-repeat;
   height: 90vh;
   color: white;
   text-shadow: 0 2px 5px rgba(0,0,0,0.6);
