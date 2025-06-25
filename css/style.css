@@ -50,3 +50,46 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Fondo oscuro con overlay */
+.bg-nosotros {
+  background: url(../img/fondo.png) center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+.bg-nosotros .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.6);
+  z-index: 1;
+}
+
+.bg-nosotros .z-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-nosotros h2,
+.bg-nosotros p {
+  color: white;
+}
+
+/* Animaciones (puedes usar más si deseas) */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-nosotros .row {
+  animation: fadeUp 1s ease-out forwards;
+}
