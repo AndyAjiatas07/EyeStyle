@@ -93,3 +93,39 @@ footer {
 .bg-nosotros .row {
   animation: fadeUp 1s ease-out forwards;
 }
+
+/* Filtros */
+#filtros .btn-filter {
+  border: 1px solid #000;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#filtros .btn-filter.active,
+#filtros .btn-filter:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cards */
+.producto-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.producto-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
