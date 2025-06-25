@@ -129,3 +129,23 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
 }
+/* Estilos de las tarjetas de promociones */
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #fff3cd, #ffeeba);
+}
+.bg-gradient-info {
+  background: linear-gradient(135deg, #cce5ff, #b8daff);
+}
+.bg-gradient-success {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+}
+
+.promo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.promo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
