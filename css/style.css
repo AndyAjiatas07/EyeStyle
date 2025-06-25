@@ -53,7 +53,7 @@ footer {
 
 /* Fondo oscuro con overlay */
 .bg-nosotros {
-  background: url(../img/fondo.png) center/cover no-repeat;
+  background: url(../img/fNosotros.png) center/cover no-repeat;
   position: relative;
   color: white;
 }
