@@ -67,52 +67,181 @@
 
 
 
-  <!-- Productos Destacados -->
-  <section class="container my-5" id="catalogo">
-    <h2 class="text-center mb-4">Productos Destacados</h2>
-    <div class="d-flex justify-content-center mb-3 gap-2">
-      <button class="btn btn-outline-dark btn-sm">Mujer</button>
-      <button class="btn btn-outline-dark btn-sm">Hombre</button>
-      <button class="btn btn-outline-dark btn-sm">Unisex</button>
-      <button class="btn btn-outline-dark btn-sm">Nuevos</button>
-      <button class="btn btn-outline-dark btn-sm">En oferta</button>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lente" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Lente Moderno</h5>
-            <p class="card-text">Q299.00</p>
-            <button class="btn btn-outline-primary">Añadir al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lente" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Lente Clásico</h5>
-            <p class="card-text">Q349.00</p>
-            <button class="btn btn-outline-primary">Añadir al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lente" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Lente Deportivo</h5>
-            <p class="card-text">Q399.00</p>
-            <button class="btn btn-outline-primary">Añadir al carrito</button>
-          </div>
+<section class="container my-5" id="catalogo">
+  <h2 class="text-center mb-4 display-6 fw-bold">Productos Destacados</h2>
+
+  <!-- Filtros -->
+  <div class="d-flex justify-content-center mb-4 flex-wrap gap-2" id="filtros">
+    <button class="btn btn-filter active" data-filtro="todos">Todos</button>
+    <button class="btn btn-filter" data-filtro="mujer">Mujer</button>
+    <button class="btn btn-filter" data-filtro="hombre">Hombre</button>
+<button class="btn btn-filter" data-filtro="accesorios">Accesorios</button>
+    <button class="btn btn-filter" data-filtro="nuevos">Nuevos</button>
+    <button class="btn btn-filter" data-filtro="oferta">En oferta</button>
+  </div>
+
+  <!-- Productos -->
+  <div class="row" id="productos-lista">
+    <!-- Producto 1 -->
+    <div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos">
+      <div class="card producto-card h-100">
+        <img src="img/BALORETTE OPTICS.png" class="card-img-top" alt="Lente Mujer">
+        <div class="card-body text-center">
+          <h5 class="card-title">BALORETTE OPTICS</h5>
+          <p class="precio">Q2000.00</p>
+          <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
+          <button class="btn btn-outline-primary">Añadir al carrito</button>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Producto 2 -->
+    <div class="col-md-4 mb-4 producto" data-categoria="hombre oferta">
+      <div class="card producto-card h-100">
+        <img src="img/WAYFARER EASE OPTICS.png" class="card-img-top" alt="Lente Hombre">
+        <div class="card-body text-center">
+          <h5 class="card-title">WAYFARER EASE OPTICS</h5>
+          <p class="precio text-danger">Q1800.00 <small class="text-muted text-decoration-line-through">Q349.00</small></p>
+          <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
+          <button class="btn btn-outline-primary">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios nuevos">
+      <div class="card producto-card h-100">
+        <img src="img/SPECIAL EDITION RUGGED CASE.png" class="card-img-top" alt="Lente Unisex">
+        <div class="card-body text-center">
+          <h5 class="card-title">SPECIAL EDITION RUGGED CASE</h5>
+          <p class="precio">Q700.00</p>
+          <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
+          <button class="btn btn-outline-primary">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Producto 4 -->
+<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta">
+  <div class="card producto-card h-100">
+    <img src="img/CLUBMASTER OPTICS.png" class="card-img-top" alt="Lente Retro Mujer">
+    <div class="card-body text-center">
+      <h5 class="card-title">CLUBMASTER OPTICS</h5>
+      <p class="precio text-danger">Q2140.00<small class="text-muted text-decoration-line-through">Q279.00</small></p>
+      <div class="rating text-warning mb-2">⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 5 -->
+<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos">
+  <div class="card producto-card h-100">
+    <img src="img/ROUND METAL OPTICS.png" class="card-img-top" alt="Lente Tech Hombre">
+    <div class="card-body text-center">
+      <h5 class="card-title">ROUND METAL OPTICS</h5>
+      <p class="precio">Q1900.00</p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 6 -->
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta">
+  <div class="card producto-card h-100">
+    <img src="img/RAY-BAN CARE KIT.png" class="card-img-top" alt="Lente Polarizado Unisex">
+    <div class="card-body text-center">
+      <h5 class="card-title">RAY-BAN CARE KIT</h5>
+      <p class="precio text-danger">Q800.00 <small class="text-muted text-decoration-line-through">Q329.00</small></p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+<!-- Producto 7 -->
+<div class="col-md-4 mb-4 producto" data-categoria="hombre">
+  <div class="card producto-card h-100">
+    <img src="img/AVIATOR OPTICS.png" class="card-img-top" alt="Lente Ejecutivo">
+    <div class="card-body text-center">
+      <h5 class="card-title">AVIATOR OPTICS</h5>
+      <p class="precio">Q1459.00</p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 8 -->
+<div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos">
+  <div class="card producto-card h-100">
+    <img src="img/RB4451V OPTICS.png" class="card-img-top" alt="Lente Fashion Mujer">
+    <div class="card-body text-center">
+      <h5 class="card-title">RB4451V OPTICS</h5>
+      <p class="precio">Q1950.00</p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 9 -->
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios">
+  <div class="card producto-card h-100">
+    <img src="img/RAY-BAN CLEANING CLOTH.png" class="card-img-top" alt="Lente Casual">
+    <div class="card-body text-center">
+      <h5 class="card-title">RAY-BAN CLEANING CLOTH</h5>
+      <p class="precio">Q280.00</p>
+      <div class="rating text-warning mb-2">⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 10 -->
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta">
+  <div class="card producto-card h-100">
+    <img src="img/RAY-BAN ZERO FOG SPRAY.png" class="card-img-top" alt="Lente Retro Circular">
+    <div class="card-body text-center">
+      <h5 class="card-title">RAY-BAN ZERO FOG SPRAY</h5>
+      <p class="precio text-danger">Q199.00 <small class="text-muted text-decoration-line-through">Q289.00</small></p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 11 -->
+<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos">
+  <div class="card producto-card h-100">
+    <img src="img/NEW CLUBMASTER OPTICS.png" class="card-img-top" alt="Lente Sport Pro">
+    <div class="card-body text-center">
+      <h5 class="card-title">NEW CLUBMASTER OPTICS</h5>
+      <p class="precio">Q419.00</p>
+      <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 12 -->
+<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta">
+  <div class="card producto-card h-100">
+    <img src="img/SKYLER OPTICS.png" class="card-img-top" alt="Lente Chic Mujer">
+    <div class="card-body text-center">
+      <h5 class="card-title">SKYLER OPTICS</h5>
+      <p class="precio text-danger">Q229.00 <small class="text-muted text-decoration-line-through">Q319.00</small></p>
+      <div class="rating text-warning mb-2">⭐⭐⭐</div>
+      <button class="btn btn-outline-primary">Añadir al carrito</button>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
 
   <!-- Promociones -->
-  <section class="container my-5" id="promociones">
+  <section class="container my-5" id="promociones"> 
     <h2 class="text-center mb-4">Promociones</h2>
     <div class="row g-4">
       <div class="col-md-4">
