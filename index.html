@@ -18,12 +18,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="#" class="nav-link nav-link-toggle" data-target="section-nosotros">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
           <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
-          <li class="nav-item">
-  <a href="#" class="nav-link nav-link-toggle" data-target="section-nosotros">Nosotros</a>
-</li>
-
           <li class="nav-item"><a class="nav-link" href="https://www.kinal.org.gt/">Contacto</a></li>
         </ul>
         <a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-shopping-cart"></i></a>
@@ -33,14 +30,14 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero d-flex align-items-center justify-content-center text-center">
+<header class="hero d-flex align-items-center justify-content-center text-center fade-in-section">
     <div>
       <h1 class="display-4 fw-bold">Tu estilo empieza con la mirada</h1>
       <a href="#catalogo" class="btn btn-lg mt-3">Ver colección</a>
     </div>
   </header>
 
-<section id="section-nosotros" class="toggle-section container-fluid py-5 position-relative bg-nosotros text-white">
+<section id="section-nosotros" class="container-fluid py-5 position-relative bg-nosotros text-white fade-in-section">
   <div class="overlay"></div>
   <div class="container position-relative z-2">
     <div class="row align-items-center">
@@ -71,7 +68,7 @@
   <h2 class="text-center mb-4 display-6 fw-bold">Productos Destacados</h2>
 
   <!-- Filtros -->
-  <div class="d-flex justify-content-center mb-4 flex-wrap gap-2" id="filtros">
+<div class="d-flex justify-content-center mb-4 flex-wrap gap-2 fade-in-section" id="filtros">
     <button class="btn btn-filter active" data-filtro="todos">Todos</button>
     <button class="btn btn-filter" data-filtro="mujer">Mujer</button>
     <button class="btn btn-filter" data-filtro="hombre">Hombre</button>
@@ -81,158 +78,158 @@
   </div>
 
   <!-- Productos -->
-  <div class="row" id="productos-lista">
+<div class="row fade-in-section" id="productos-lista">
     <!-- Producto 1 -->
-    <div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos">
+<div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos" data-descripcion="Lentes femeninos de alta gama, ideales para looks urbanos con estilo. Protección UV400.">
       <div class="card producto-card h-100">
         <img src="img/BALORETTE OPTICS.png" class="card-img-top" alt="Lente Mujer">
         <div class="card-body text-center">
           <h5 class="card-title">BALORETTE OPTICS</h5>
 <p class="precio">Q1990.00</p>
           <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
-          <button class="btn btn-outline-primary">Añadir al carrito</button>
+          <button class="btn btn-outline-primary">Ver detalles</button>
         </div>
       </div>
     </div>
 
     <!-- Producto 2 -->
-    <div class="col-md-4 mb-4 producto" data-categoria="hombre oferta">
+<div class="col-md-4 mb-4 producto" data-categoria="hombre oferta" data-descripcion="Diseño clásico reinventado para el hombre moderno. Cómodos, duraderos y con lentes antirreflejo.">
       <div class="card producto-card h-100">
         <img src="img/WAYFARER EASE OPTICS.png" class="card-img-top" alt="Lente Hombre">
         <div class="card-body text-center">
           <h5 class="card-title">WAYFARER EASE OPTICS</h5>
 <p class="precio text-danger">Q1490.00 <small class="text-muted text-decoration-line-through">Q1890.00</small></p>
           <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
-          <button class="btn btn-outline-primary">Añadir al carrito</button>
+          <button class="btn btn-outline-primary">Ver detalles</button>
         </div>
       </div>
     </div>
 
     <!-- Producto 3 -->
-<div class="col-md-4 mb-4 producto" data-categoria="accesorios nuevos">
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios nuevos" data-descripcion="Estuche robusto edición especial, ideal para proteger tus lentes en cualquier situación. Diseño elegante y resistente.">
       <div class="card producto-card h-100">
         <img src="img/SPECIAL EDITION RUGGED CASE.png" class="card-img-top" alt="Lente Unisex">
         <div class="card-body text-center">
           <h5 class="card-title">SPECIAL EDITION RUGGED CASE</h5>
 <p class="precio">Q620.00</p>
           <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
-          <button class="btn btn-outline-primary">Añadir al carrito</button>
+          <button class="btn btn-outline-primary">Ver detalles</button>
         </div>
       </div>
     </div>
 
 <!-- Producto 4 -->
-<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta">
+<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta" data-descripcion="Estilo retro con un toque contemporáneo. Ideal para looks casuales o sofisticados.">
   <div class="card producto-card h-100">
     <img src="img/CLUBMASTER OPTICS.png" class="card-img-top" alt="Lente Retro Mujer">
     <div class="card-body text-center">
       <h5 class="card-title">CLUBMASTER OPTICS</h5>
 <p class="precio text-danger">Q1740.00 <small class="text-muted text-decoration-line-through">Q2140.00</small></p>
       <div class="rating text-warning mb-2">⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 5 -->
-<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos">
+<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos" data-descripcion="Lentes metálicos con diseño circular para un estilo tech urbano. Livianos y resistentes.">
   <div class="card producto-card h-100">
     <img src="img/ROUND METAL OPTICS.png" class="card-img-top" alt="Lente Tech Hombre">
     <div class="card-body text-center">
       <h5 class="card-title">ROUND METAL OPTICS</h5>
 <p class="precio">Q1820.00</p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 6 -->
-<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta">
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta" data-descripcion="Kit de limpieza Ray-Ban con todo lo necesario para mantener tus lentes impecables y libres de manchas.">
   <div class="card producto-card h-100">
     <img src="img/RAY-BAN CARE KIT.png" class="card-img-top" alt="Lente Polarizado Unisex">
     <div class="card-body text-center">
       <h5 class="card-title">RAY-BAN CARE KIT</h5>
 <p class="precio text-danger">Q280.00 <small class="text-muted text-decoration-line-through">Q390.00</small></p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 <!-- Producto 7 -->
-<div class="col-md-4 mb-4 producto" data-categoria="hombre">
+<div class="col-md-4 mb-4 producto" data-categoria="hombre" data-descripcion="El clásico aviador que nunca pasa de moda. Perfecto para un look ejecutivo o casual.">
   <div class="card producto-card h-100">
     <img src="img/AVIATOR OPTICS.png" class="card-img-top" alt="Lente Ejecutivo">
     <div class="card-body text-center">
       <h5 class="card-title">AVIATOR OPTICS</h5>
 <p class="precio">Q1690.00</p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 8 -->
-<div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos">
+<div class="col-md-4 mb-4 producto" data-categoria="mujer nuevos" data-descripcion="Lentes fashion para mujeres que marcan tendencia. Montura moderna con detalles sutiles.">
   <div class="card producto-card h-100">
     <img src="img/RB4451V OPTICS.png" class="card-img-top" alt="Lente Fashion Mujer">
     <div class="card-body text-center">
       <h5 class="card-title">RB4451V OPTICS</h5>
 <p class="precio">Q1890.00</p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 9 -->
-<div class="col-md-4 mb-4 producto" data-categoria="accesorios">
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios" data-descripcion="Paño especial de microfibra para una limpieza suave y eficaz. Ideal para mantener tus lentes como nuevos.">
   <div class="card producto-card h-100">
     <img src="img/RAY-BAN CLEANING CLOTH.png" class="card-img-top" alt="Lente Casual">
     <div class="card-body text-center">
       <h5 class="card-title">RAY-BAN CLEANING CLOTH</h5>
 <p class="precio">Q120.00</p>
       <div class="rating text-warning mb-2">⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 10 -->
-<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta">
+<div class="col-md-4 mb-4 producto" data-categoria="accesorios oferta" data-descripcion="Spray anti-empañante ideal para días fríos o uso con mascarilla. Mantén tu visión clara en todo momento.">
   <div class="card producto-card h-100">
     <img src="img/RAY-BAN ZERO FOG SPRAY.png" class="card-img-top" alt="Lente Retro Circular">
     <div class="card-body text-center">
       <h5 class="card-title">RAY-BAN ZERO FOG SPRAY</h5>
 <p class="precio text-danger">Q149.00 <small class="text-muted text-decoration-line-through">Q219.00</small></p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 11 -->
-<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos">
+<div class="col-md-4 mb-4 producto" data-categoria="hombre nuevos" data-descripcion="Estilo renovado del clásico Clubmaster. Perfecto para quienes buscan elegancia con actitud.">
   <div class="card producto-card h-100">
     <img src="img/NEW CLUBMASTER OPTICS.png" class="card-img-top" alt="Lente Sport Pro">
     <div class="card-body text-center">
       <h5 class="card-title">NEW CLUBMASTER OPTICS</h5>
 <p class="precio">Q1690.00</p>
       <div class="rating text-warning mb-2">⭐⭐⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
 
 <!-- Producto 12 -->
-<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta">
+<div class="col-md-4 mb-4 producto" data-categoria="mujer oferta" data-descripcion="Lentes chic con diseño estilizado. Ideales para realzar tu outfit con un toque femenino y moderno.">
   <div class="card producto-card h-100">
     <img src="img/SKYLER OPTICS.png" class="card-img-top" alt="Lente Chic Mujer">
     <div class="card-body text-center">
       <h5 class="card-title">SKYLER OPTICS</h5>
 <p class="precio text-danger">Q1259.00 <small class="text-muted text-decoration-line-through">Q1629.00</small></p>
       <div class="rating text-warning mb-2">⭐⭐⭐</div>
-      <button class="btn btn-outline-primary">Añadir al carrito</button>
+      <button class="btn btn-outline-primary">Ver detalles</button>
     </div>
   </div>
 </div>
@@ -241,7 +238,7 @@
 
 
 <!-- Promociones -->
-<section class="container my-5 toggle-section" id="promociones">
+<section class="container my-5 fade-in-section" id="promociones">
   <h2 class="text-center mb-5 display-5 fw-bold text-primary">🎉 Promociones Exclusivas</h2>
   <div class="row g-4">
     <!-- Promo 1 -->
@@ -275,7 +272,7 @@
 
 
   <!-- Ventajas -->
-  <section class="bg-white py-5">
+<section class="bg-white py-5 fade-in-section">
     <div class="container text-center">
       <h2 class="mb-4">Por qué comprar en EyeStyle</h2>
       <div class="row g-4">
@@ -300,7 +297,7 @@
   </section>
 
   <!-- Opiniones -->
-  <section class="container my-5">
+<section class="container my-5 fade-in-section">
     <h2 class="text-center mb-4">Opiniones de Clientes</h2>
     <div class="row">
       <div class="col-md-4">
@@ -328,7 +325,7 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="bg-dark text-white py-5 text-center" id="contacto">
+<section class="bg-dark text-white py-5 text-center fade-in-section" id="contacto">
     <h2>Suscríbete y recibe 10% en tu primera compra</h2>
     <form class="d-flex justify-content-center mt-3">
       <input type="email" class="form-control w-50 me-2" placeholder="Tu correo electrónico" required />
@@ -337,15 +334,15 @@
   </section>
 
   <!-- Redes Sociales -->
-  <section class="text-center my-4">
-    <h2>Síguenos</h2>
+<section class="text-center my-4 fade-in-section">
+      <h2>Síguenos</h2>
     <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
     <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
     <a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4">
+<footer class="py-4 fade-in-section">
     <div class="container text-center">
       <p>Contacto: info@eyestyle.com | Tel: +502 1234 5678</p>
       <p>Métodos de pago: Visa, Mastercard, PayPal</p>
@@ -356,5 +353,30 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
+  <!-- Modal de Detalles -->
+<div class="modal fade" id="modalDetalle" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Detalles del Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="modalImagen" src="" alt="Producto" class="img-fluid rounded" />
+          </div>
+          <div class="col-md-6">
+            <h4 id="modalNombre"></h4>
+            <p id="modalPrecio" class="fw-bold text-primary"></p>
+            <p id="modalDescripcion">Aquí puedes agregar una descripción más larga del producto si lo deseas.</p>
+            <button class="btn btn-warning mt-3">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
